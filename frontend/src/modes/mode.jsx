@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { TiAdjustBrightness, TiAdjustContrast } from "react-icons/ti";
+import { Button } from '@mui/material';
 
 const ThemeToggle = () => {
   const [theme, setTheme] = useState(
@@ -21,14 +22,14 @@ const ThemeToggle = () => {
   };
 
   return (
-    <button onClick={toggleTheme}>
+    <Button onClick={toggleTheme}>
       {theme === 'light' 
       ? 
         <TiAdjustBrightness fontSize={20}/>
       :
         <TiAdjustContrast fontSize={20}/>
       }
-    </button>
+    </Button>
   );
 };
 
