@@ -1,17 +1,21 @@
 import { useState } from 'react'
-import './App.css'
-import { ButtonGroup, Button } from '@mui/material'
+import { ButtonGroup, Button, Box } from '@mui/material'
+import Navbar from './components/Navbar'
+import CreatePage from './pages/CreatePage'
+import HomePage from './pages/HomePage'
+import { Route, Routes } from 'react-router-dom'
 
 function App() {
 
   return (
     <>
-      <div className='flex flex-center'>
-        <ButtonGroup>
-          <Button>Hi!</Button>
-          <Button>Hey!</Button>
-        </ButtonGroup>
-      </div>
+      <Box className='flex'>
+        <Navbar/>
+        <Routes>
+          <Route path='/' element={ <HomePage/>}/>
+          <Route path='/create' element={ <CreatePage/>}/>
+        </Routes>
+      </Box>
     </>
   )
 }
