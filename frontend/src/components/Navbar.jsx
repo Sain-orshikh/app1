@@ -6,7 +6,7 @@ function Navbar() {
 
   return (
     <>
-      <Box className="flex flex-row sm:flex-col items-center justify-between">
+      <Box className="flex flex-col sm:flex-row items-center justify-between">
         <Button>Hihihiha</Button>
         <Button>Hehe</Button>
       </Box>

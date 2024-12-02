@@ -11,10 +11,12 @@ function App() {
     <>
       <Box className='flex'>
         <Navbar/>
+      </Box>
+      <Box className='flex'>
         <Routes>
           <Route path='/' element={ <HomePage/>}/>
           <Route path='/create' element={ <CreatePage/>}/>
-        </Routes>
+        </Routes> 
       </Box>
     </>
   )

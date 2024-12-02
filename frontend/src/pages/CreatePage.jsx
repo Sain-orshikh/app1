@@ -5,7 +5,7 @@ function CreatePage() {
 
   return (
     <>
-      <Box className="flex flex-row sm:flex-col items-center justify-between">
+      <Box className="flex flex-col sm:flex-row items-center justify-between">
         <Button>Create</Button>
         <Button>Page</Button>
       </Box>
